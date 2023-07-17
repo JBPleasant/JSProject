@@ -1,0 +1,129 @@
+:root {
+    --space-cadet: #2C2C54;
+    --slate-gray: #708090;
+    --sandy-brown: #F4A460;
+  }
+  
+ /* Global styles */
+body {
+    background-color: var(--space-cadet);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, p {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 1.5em;
+    background-color: var(--sandy-brown);
+    box-shadow: 4px var(--slate-gray);
+    border-radius: 4px;
+  }
+  
+  /* Banner styles */
+  #banner {
+    margin-bottom:.5em;
+    background-color: var(--space-cadet);
+  }
+  
+  .banner-image {
+    width: 100%;
+    max-width: 90%;
+    max-height: 20em;
+    display: block;
+    margin: 0 auto;
+  }
+    
+  /* Form styles */
+  form {
+    margin: auto;
+    max-width: 90%;
+    border-radius: 4px;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: .5em;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: var(--slate-gray);
+    margin-bottom: 1.5em;
+  }
+  
+  button {
+    padding: 1em 2em;
+    background-color: var(--space-cadet);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  /* Day styles */
+  .day {
+    background-color: var(--space-cadet);
+    padding: 2em;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.5, 0.5);
+    margin-bottom: 1em;
+  }
+  
+  .day:nth-child(even) {
+    background-color: var(--slate-gray);
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    body {
+        padding: 1em;
+    }
+
+    .container {
+      padding: 1em;
+    }
+
+    .banner-image {
+        max-width: 95%;
+    }
+    
+    form {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 1120px) {
+    body {
+        padding: 1.8em;
+    }
+
+    .container {
+      padding: auto, 1.8em, 1.8em, auto;
+    }
+
+    .banner-image {
+        max-width: 95%;
+    }
+    
+    form {
+      max-width: 100%;
+    }
+  }
